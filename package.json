@@ -1,0 +1,36 @@
+{
+  "name": "is-esm-cli",
+  "version": "1.0.0",
+  "description": "Effortless way to verify if a package uses the ECMAScript Module format 🕵️‍♂️ helping you determine its tree-shakability 🌳",
+  "keywords": [
+    "esm",
+    "modules",
+    "javascript",
+    "npm"
+  ],
+  "homepage": "https://github.com/rdwz/is-esm#readme",
+  "bugs": {
+    "url": "https://github.com/rdwz/is-esm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdwz/is-esm.git"
+  },
+  "license": "MIT",
+  "author": "Marc Redwerkz",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/main.js",
+      "require": "./src/cli.js"
+    }
+  },
+  "main": "./src/main.js",
+  "bin": {
+    "is-esm": "./src/cli.js"
+  },
+  "dependencies": {
+    "ora": "^8.1.1"
+  },
+  "packageManager": "bun@1.1.38"
+}
